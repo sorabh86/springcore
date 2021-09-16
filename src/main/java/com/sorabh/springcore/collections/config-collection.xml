@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean class="com.sorabh.springcore.collections.Employee" name="employee1">
+		<property name="name" value="Raja" />
+		<property name="phones">
+			<list>
+				<value>98344848272</value>
+				<value>93384848272</value>
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>Delhi</value>
+				<value>Ghaziabad</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="java" value="2month" />
+				<entry key="sql" value="1month" />
+			</map>
+		</property>
+	</bean>
+
+	<!-- Collection Type -->	
+	<!-- LIST -->
+	<!-- <bean class="" name="">
+		<property name="">
+			<list>
+				<value></value>
+				...
+			</list>
+		</property>
+	</bean> -->
+	
+	<!-- SET -->
+	<!-- <bean>
+		<property name="">
+			<set>
+				<value></value>
+				...
+			</set>
+		</property>
+	</bean> -->
+	
+	<!-- MAP -->
+	<!-- <bean>
+		<property name="">
+			<map>
+				<entry key="" value="" />
+				...
+			</map>
+		</property>
+	</bean> -->
+	
+	<!-- PROPERTIES -->
+	<!-- <bean>
+		<property name="">
+			<props>
+				<prop key="">value</prop>
+				...
+			</props>
+		</property>
+	</bean> -->
+		
+</beans>
